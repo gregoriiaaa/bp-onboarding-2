@@ -32,9 +32,6 @@ const Button: React.FC<ButtonProps> = ({
   onPress,
 }) => {
   const clickHandler = (
-    // When passing a union as a type parameter,
-    // you can provide type-safety to a more
-    // abstract handlers:
     e: MouseEvent<HTMLButtonElement | HTMLAnchorElement>
   ): void => {
     e.preventDefault();
